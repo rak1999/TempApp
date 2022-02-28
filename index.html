@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <form id="tempCal" onsubmit="calculateTemp(); return false">
+      <label id="lable"> Temparaturn Calculator </label> <br />
+      <input type="number" name="tempNumber" id="tempNumber" />
+      <select id="select">
+        <option value="°Celcius">°Celcius</option>
+        <option value="°Fahrenheit">°Fahrenheit</option>
+      </select>
+      <br />
+      <div id="btnDiv">
+        <input id="submit" type="submit" name="temp" />
+      </div>
+      <div id="resContainer">
+        <div id="resultDiv">
+          <lable>Result : </lable>
+          <p id="result"></p>
+        </div>
+      </div>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
